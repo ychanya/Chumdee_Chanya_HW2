@@ -1,0 +1,147 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #260448;
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+  background-color: #40138f;
+  padding: 10px 0px;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(40, 37, 37);
+    color: #fff;
+    height: 80px;
+    position: sticky;
+    top: 100%;
+}
+
+#main-logo {
+    width: 300px;
+    display: block;
+    margin: 0px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#nav-character {
+    background-image: url(../images/inside_out_2_background.jpg);
+    background-blend-mode: multiply;
+    background-color: #675050;
+    background-size: cover;
+}
+
+#nav-character ul {
+    list-style-type: none;
+    padding: 50px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#nav-character li {
+    height: 220px;
+    margin: 10px 8px; 
+    background-color: black;
+    box-shadow: 0 158px 0 0 rgb(64, 19, 143) inset;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#nav-character ul li:hover {
+    box-shadow: 0 220px 0 0 rgb(64, 19, 143)inset;
+}
+
+#nav-character ul li a {
+    text-decoration: none;
+}
+
+#nav-character ul li h2 {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+#joy {
+    background-position: -150px 0px;
+}
+
+#disgust {
+    background-position: -300px 0px;
+}
+
+#anxiety {
+    background-position: -450px 0px;
+}
+
+#embarrasment{
+    background-position: -600px 0px;
+}
+
+#envy {
+    background-position: -750px 0px;
+}
+
+#sadness:hover, #joy:hover, #disgust:hover, #anxiety:hover, #embarrasment:hover, #envy:hover {
+    background-position-y: -150px;
+}
+
+#instruction {
+    padding: 30px;
+    text-align: center;
+}
+
+#instruction h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/insideOutSprites.png);
+}
+
+.lightbox{
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .85);
+    display: none;
+}
+
+.lightbox-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+    display: flex;
+    justify-self: end;
+    margin: 50px;
+}
+
+.hidden {
+    display: none;
+}
